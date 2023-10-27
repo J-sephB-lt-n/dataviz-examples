@@ -6,6 +6,8 @@ I built this package because I like to quickly try different data visualizations
 
 ```python
 >>> example_finder = ExampleFinder()
+>>> example_finder.print_all_example_names()
+< prints out names of all available code examples >
 >>> example_finder.search_by_tags("colour by sign")
 2  Line Plot Coloured by Sign  [python]  {'matplotlib'}
 >>> example_finder.print_example_metadata(2)

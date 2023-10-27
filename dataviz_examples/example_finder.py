@@ -11,6 +11,8 @@ class ExampleFinder:
     Example Usage
     -------------
     >>> example_finder = ExampleFinder()
+    >>> example_finder.print_all_example_names()
+    ...
     >>> example_finder.search_by_tags("colour by sign")
     2  Line Plot Coloured by Sign  [python]  {'matplotlib'}
     >>> example_finder.print_example_metadata(2)
@@ -49,6 +51,13 @@ class ExampleFinder:
                 with open(f"{language}/{script_name}", "r", encoding="utf-8") as file:
                     example["code"] = file.read()
                 self.all_examples.append(example)
+
+    def print_all_example_names(self) -> None:
+        """docstring TODO"""
+        for idx, example in enumerate(self.all_examples):
+            print(
+                f'{idx}  {example["plot_name"]}  [{example["language"]}]  {example["frameworks"]}'
+            )
 
     def search_by_tags(self, search_str: str) -> None:
         """docstring TODO"""
