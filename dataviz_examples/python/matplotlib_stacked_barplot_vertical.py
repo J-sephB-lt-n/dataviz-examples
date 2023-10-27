@@ -3,7 +3,7 @@
 from typing import Any
 
 metadata: dict[str, Any] = {
-    "plot_name": "Bar Plot (Vertical)",
+    "plot_name": "Stacked Bar Plot (Vertical)",
     "plot_aliases": {"Bar Chart (Vertical)"},
     "description": """Chart showing the relationship between a categorical and 
     numeric variable using stacked vertical bars""",
@@ -60,6 +60,6 @@ if __name__ == "__main__":
         )
     ax.set_xlabel("This is the X axis")
     ax.set_ylabel("This is the Y axis")
-    ax.set_title("This is the Plot Title")
+    ax.set_title("Stacked Bar Plot (Vertical)")
     ax.legend()
     plt.show()
