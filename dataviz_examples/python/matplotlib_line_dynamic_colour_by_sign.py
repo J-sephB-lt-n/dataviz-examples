@@ -9,6 +9,7 @@ metadata: dict[str, Any] = {
     (also includes transparent bar chart underneath)""",
     "tags": {"colour", "dynamic", "line", "sign", "threshold"},
     "frameworks": {"matplotlib"},
+    "comments": "",
 }
 
 if __name__ == "__main__":

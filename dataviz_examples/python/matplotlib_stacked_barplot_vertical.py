@@ -14,6 +14,7 @@ metadata: dict[str, Any] = {
         "vertical",
     },
     "frameworks": {"matplotlib"},
+    "comments": "",
 }
 
 

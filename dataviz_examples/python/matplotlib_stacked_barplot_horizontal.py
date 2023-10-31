@@ -9,6 +9,7 @@ metadata: dict[str, Any] = {
     numeric variable using stacked horizontal bars""",
     "tags": {"bar", "horizontal", "stack", "stacked"},
     "frameworks": {"matplotlib"},
+    "comments": "",
 }
 
 if __name__ == "__main__":
